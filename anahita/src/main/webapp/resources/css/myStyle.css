@@ -1,0 +1,118 @@
+
+  .no-margin {
+    margin:0px ;
+  }
+  .no-padding {
+    padding:0px;
+  } 
+
+  body{padding-top:25px;}
+
+  /* Navbar CSS*/
+ 
+  .navbar{
+    border-radius: 0;
+  }
+  .navbar-default {
+      background-color: #993333;
+      border-color: #AA0000;
+      border-radius: 0;
+  }
+  .navbar-default .navbar-brand { background-color:lightgreen;color: darkblue;font-size: 12pt;font-variant-caps: small-caps;font-weight: bold;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+      color: #FFF;
+  }
+  .navbar-default .navbar-nav > li > a {
+      color: #FFF; font-weight: bold;font-size:12pt;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+      background-color:lightblue;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+      color: black;
+      background-color:lightyellow;
+  }
+  .navbar-default .navbar-text {color: #FFF; font-weight: bold;}
+
+  .navbar-default .navbar-toggle {
+      border: 2pt solid lightyellow;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+      background-color: pink;
+  }
+  
+  .cssMystyle{
+  color :red; font-weight:bold; font-size:10pt;
+  }
+  
+  /* home Page - logo Banner*/
+
+  .myHeader {
+    max-height: 150px; padding:0px ;margin-top:-25px; margin-bottom:5px;
+  }
+  .page-header { border-bottom:none; 
+  }
+  #ban2 {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Home Page -Carousel */
+
+  .carousel {
+    margin-top :5px;padding:0px;
+    width:100%;
+    height:425px;
+  }
+  .carousel-inner > .item > img {
+    width:100%;
+    height:425px;
+   
+ }
+
+
+    /* Footer */
+
+  .myFooter{
+  margin-top:4px ;padding-top:4px;
+ }
+ .myFooter p { font-weight: bold;font-size: 8pt ; color :black;text-align: center; vertical-align: middle; }
+
+ /* About Us page -contents*/
+
+ .myCompany{
+   margin-top:25px;
+ }
+  
+  .media-heading {
+    font-size:14pt ;color: navy;font-weight: bold;
+  }
+ 
+ p{
+  text-align: justify;font-size: 10pt ;letter-spacing: 1px;
+ }
+
+ /*Contact Us Page CSS*/
+
+ .formHeader{
+        margin :20px auto; padding :5px;
+       }     
+     
+    
+ .mylabel label {
+        font :11pt;
+      }
+  #success_message{ display: none;}
+
+  /* Sign Up page CSS */
+
+.myPanel{margin-top :10px;}
+
+/*Login Page CSS */

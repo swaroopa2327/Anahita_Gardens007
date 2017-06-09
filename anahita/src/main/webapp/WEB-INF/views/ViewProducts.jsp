@@ -53,7 +53,7 @@ margin-left:5px;
 		angular.module('Anahita', []).controller('ProductController',
 			function($scope) {
 				$scope.plo = pl;
-				$scope.clo = cl;		
+				$scope.clo = cl;
 
 			});
 </script>
@@ -88,7 +88,7 @@ margin-left:5px;
 										style="background-color:lightcyan ;margin-top:2px">
 										<a href="zoomProduct?getId={{p.pId}}" id="producta">
 											<div>
-												<img class="img-rounded img-fluid"
+												<img class="img-rounded "
 													src="resources/ProductImages/{{p.pId}}.jpg" height="200px"
 													width="225px"> 
 												
@@ -97,9 +97,9 @@ margin-left:5px;
 											</div>
 										</a>
 									</div>
-
+                           <c:if test="${sessionScope.UserLoggedIn ==null}">
 									<div class="panel-body " >
-										<a href="buyProduct" id="producta">
+										<a href="Login" id="producta">
 											<button  class="btn btn-sm "style="background-color:darkgreen;font-size:8pt ;color:white;margin-top:-3px">
 												Buy Now <span class="glyphicon glyphicon-shopping-cart" style="margin-left:5px"></span>
 											</button>
@@ -111,12 +111,14 @@ margin-left:5px;
 											</button>
 										</a> 															
 									</div>
-									
-									<!--   The above button will be replaced by add to cart button when user is logged in  
-									<div class="panel-body " >
-										<a href="viewproduct?getId={{p.ProductId}}" id="producta">
-											<button id="addtocartbutton" class="btn btn-sm "style="background-color:darkgreen;font-size:8pt ;color:white;margin-top:-3px">
-												Add to Cart <span class="glyphicon glyphicon-shopping-cart" style="margin-left:5px"></span>
+							</c:if>
+							
+						   <c:if test="${sessionScope.UserLoggedIn !=null}">
+							
+							<div class="panel-body " >
+										<a href="" id="producta">
+											<button  class="btn btn-sm "style="background-color:darkgreen;font-size:8pt ;color:white;margin-top:-3px">
+												Add to cart <span class="glyphicon glyphicon-shopping-cart" style="margin-left:5px"></span>
 											</button>
 										</a> 
 										
@@ -125,12 +127,10 @@ margin-left:5px;
 												View Details<span class="glyphicon glyphicon-info-sign" style="margin-left:5px" ></span>
 											</button>
 										</a> 															
-									</div>  -->
-									
-									
-									
-									
-								</div>
+									</div>
+							</c:if>
+							
+							</div>
 							</li>
 						</ul>
 					</div>
